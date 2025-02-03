@@ -1,0 +1,11 @@
+#topbar li {
+    display:inline-block;
+    margin-right:50px;
+}
+#topbar a {
+    text-decoration:none;
+    color: #1D42BA;
+}
+#topbar a:hover {
+    color:#436cf2;
+}
