@@ -69,9 +69,12 @@ table {
     border-collapse: collapse;
     max-width: 800px;
     margin: 0 auto;
+    background-color: #f2f2f2;
+    ;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
@@ -93,4 +96,10 @@ th {
 
 .away {
     color: #C8102E;
+}
+
+body {
+    background-color: lightgray;
+    font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
+    font-stretch: expanded;
 }
