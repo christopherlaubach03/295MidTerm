@@ -1,0 +1,102 @@
+.logo img {
+    height: 70px;
+    margin-left: 30px;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+#topbar {
+    background: linear-gradient(to right, #1D42BA, #2A4FD5);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#topbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+}
+
+#topbar li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#topbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size:20px;
+    transition: color 0.4s ease;
+}
+
+#topbar a:hover {
+    color: #C8102E;
+}
+
+.stadiumImg {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: whitesmoke;
+    overflow: hidden;
+    padding: .04cm;
+    width: fit-content;
+}
+
+
+
+.stadiumImg img {
+    display: flex;
+    width: 250px;
+    height: 250px;
+   text-align: left;
+   background-color: whitesmoke;
+   border-top: 1px whitesmoke;
+    
+}
+
+.stadiumImg .image-container{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    background-color: whitesmoke;
+    padding: .04px;
+
+}
+
+.founderImg{
+    display: inline-block;
+    text-align: left;
+    background-color: whitesmoke;
+    overflow: hidden;
+    padding: .04cm;
+}
+
+.founderImg img{
+    display: block;
+    width: 250px;
+
+}
+
+
+
+.founderImg figcaption{
+    display: block;
+    width: 250px;
+    background-color: whitesmoke;
+    padding: auto;
+    text-align: left;
+    border-top: none;
+}
+body{
+    background-color: lightgray;
+    font-family: Cambria, Cochin, Georgia,  'Times New Roman', serif;
+    font-stretch: expanded;
+   }
