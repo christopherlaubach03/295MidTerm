@@ -54,4 +54,57 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1D42BA;
+    border-bottom: 2px solid #C8102E;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #1D42BA;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.authors {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.goals, .requirements {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.goals ul, .requirements ol {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
