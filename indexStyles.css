@@ -41,12 +41,62 @@
 }
 
 body {
-    background-color: lightgray;
-    font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
-    font-stretch: expanded;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: lightgray;
+    font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
+    font-stretch: expanded;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    color: #1D42BA;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    ;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #C8102E;
+    color: white;
+}
+
+.game {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.home {
+    color: #1D42BA;
+}
+
+.away {
+    color: #C8102E;
 }
