@@ -68,6 +68,11 @@ h1{
     margin-bottom: 20px;
 }
 
+.roster-container img{
+    width: 200px;
+    height: 150px;
+}
+
 table{
     width: 100%;
     border-collapse: collapse;
