@@ -1,3 +1,4 @@
+/* Styles for the image logo on the top left side of the page */
 .logo img {
     height: 70px;
     margin-left: 30px;
@@ -6,6 +7,8 @@
 .logo a {
     display: inline-block;
 }
+
+/* Styles for the topbar, the blue bar on top of page */
 #topbar {
     background: linear-gradient(to right, #1D42BA, #2A4FD5);
     padding: 10px 0;
@@ -14,6 +17,7 @@
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 #topbar ul {
     list-style-type: none;
     padding: 0;
@@ -37,6 +41,8 @@
 #topbar a:hover {
     color: #C8102E;
 }
+
+/* Used for the background color of the page */
 body {
     background-color: lightgray;
     font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
@@ -50,14 +56,16 @@ body {
     line-height: 1.6;
 }
 
-h1{
+/* Sets the styling for the header of each table */
+h1 {
     color: #1D42BA;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
-.roster-container{
+/* Main container for the table */
+.roster-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -68,26 +76,30 @@ h1{
     margin-bottom: 20px;
 }
 
-.roster-container img{
+/* This makes the image a specific size */
+.roster-container img {
     width: 200px;
     height: 150px;
 }
 
-table{
+/*  */
+table {
     width: 100%;
     border-collapse: collapse;
 }
-tbody tr{
+
+tbody tr {
     border-bottom: 1px solid #ddd;
 }
-td{
+
+td {
     padding: 10px;
     vertical-align: top;
 }
 
-.stats-button{
+.stats-button {
     background-color: #1D42BA;
-    color:white;
+    color: white;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -98,28 +110,30 @@ td{
     display: block;
 }
 
-.stats-button img{
+.stats-button img {
     width: 15px;
     height: 15px;
-   
 }
 
-.stats-button:hover{
+.stats-button:hover {
     background-color: rgb(99, 61, 213);
 }
 
-.stats-row{
+.stats-row {
     display: none;
     background-color: #f0f0f0;
 }
-.stats-content{
+
+.stats-content {
     padding: 10px;
     display: flex;
     justify-content: space-around;
 }
-.stats-content{
-    margin:0;
+
+.stats-content {
+    margin: 0;
 }
-.stats-row.show{
+
+.stats-row.show {
     display: table-row;
 }
