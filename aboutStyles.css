@@ -44,11 +44,6 @@ body {
     background-color: lightgray;
     font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
     font-stretch: expanded;
-}
-body {
-    background-color: lightgray;
-    font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
-    font-stretch: expanded;
     margin: 0;
     padding: 0;
     display: flex;
