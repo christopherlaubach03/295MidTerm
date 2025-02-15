@@ -41,55 +41,61 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
+    font-stretch: expanded;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: lightgray;
-    font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
-    font-stretch: expanded;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 h1 {
     color: #1D42BA;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    border-bottom: 2px solid #C8102E;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #f2f2f2;
-    ;
+    margin-top: 20px;
 }
 
-th,
-td {
+th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
 }
 
 th {
-    background-color: #C8102E;
+    background-color: #1D42BA;
     color: white;
 }
 
+td {
+    width: 14.28%; 
+    height: 50px; 
+    vertical-align: top;
+    padding: 5px;
+}
+
 .game {
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
     font-weight: bold;
 }
 
@@ -99,4 +105,12 @@ th {
 
 .away {
     color: #C8102E;
+}
+
+footer {
+    background-color: #1D42BA;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
 }
