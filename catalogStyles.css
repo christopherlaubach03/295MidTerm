@@ -1,116 +1,56 @@
-.logo img {
-    height: 70px;
-    margin-left: 30px;
-}
-
-.logo a {
-    display: inline-block;
-}
-
-#topbar {
-    background: linear-gradient(to right, #1D42BA, #2A4FD5);
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#topbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-right: 20px;
-}
-
-#topbar li {
-    display: inline-block;
-    margin-right: 40px;
-}
-
-#topbar a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    transition: color 0.4s ease;
-}
-
-#topbar a:hover {
-    color: #C8102E;
-}
-
-body {
-    background-color: lightgray;
-    font-family: Cambria, Cochin, Georgia, 'Times New Roman', serif;
-    font-stretch: expanded;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: #333;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-h1 {
-    color: #1D42BA;
-    border-bottom: 2px solid #C8102E;
-    padding-bottom: 10px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-}
-
-th, td {
+    background-color: #ffffff;
+  }
+  
+  th, td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-}
-
-th {
-    background-color: #1D42BA;
-    color: white;
-}
-
-td {
-    width: 14.28%; 
-    height: 50px; 
-    vertical-align: top;
-    padding: 5px;
-}
-
-.game {
-    background-color: #f9f9f9;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    color: #333;
     font-weight: bold;
-}
-
-.home {
+  }
+  
+  td {
+    width: 14.28%;
+    height: 80px;
+    vertical-align: top;
+  }
+  
+  td ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  td li {
+    font-size: 12px;
+  }
+  
+  td:hover {
+    background-color: #f9f9f9;
+  }
+  
+  #topbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #1D42BA;
+  }
+  
+  #topbar ul li a {
+    color: #333;
+  }
+  
+  #topbar ul li a:hover {
     color: #1D42BA;
-}
-
-.away {
-    color: #C8102E;
-}
-
-footer {
-    background-color: #1D42BA;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: auto;
-}
+  }
+  
+  footer {
+    background-color: #ffffff;
+    color: #333;
+  }
+  

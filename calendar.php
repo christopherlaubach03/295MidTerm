@@ -18,25 +18,27 @@ class Calendar {
         $daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         $daysInMonth = date('t', strtotime("$this->year-$this->month-01"));
         $firstDayOfWeek = date('w', strtotime("$this->year-$this->month-01"));
-
-        // Start
+    
+        // Start rendering HTML
         $html = '<table border="1">';
         $html .= '<tr><th>' . implode('</th><th>', $daysOfWeek) . '</th></tr>';
-
-        // Add empty cells for days before the first day of the month
         $html .= '<tr>';
+    
+        // Empty cells before first day
         for ($i = 0; $i < $firstDayOfWeek; $i++) {
             $html .= '<td></td>';
         }
-
-        // Add days of the month
+    
+        // Days of the month
         for ($day = 1; $day <= $daysInMonth; $day++) {
             if (($day + $firstDayOfWeek - 1) % 7 == 0 && $day != 1) {
                 $html .= '</tr><tr>';
             }
-
-            // Check if there are events for this day
-            $date = "$this->year-$this->month-" . str_pad($day, 2, '0', STR_PAD_LEFT);
+    
+            // Format date
+            $date = sprintf('%04d-%02d-%02d', $this->year, $this->month, $day);
+    
+            // Check for events
             if (isset($this->events[$date])) {
                 $eventHtml = '<ul>';
                 foreach ($this->events[$date] as $event) {
@@ -48,17 +50,18 @@ class Calendar {
                 $html .= "<td>$day</td>";
             }
         }
-
-        // Add empty cells for days after the last day of the month
+    
+        // Empty cells after last day
         while (($day + $firstDayOfWeek - 1) % 7 != 0) {
             $html .= '<td></td>';
             $day++;
         }
-
-        // Close the table
+    
+        // Close table
         $html .= '</tr></table>';
-
+    
         return $html;
     }
+    
 }
 ?>
