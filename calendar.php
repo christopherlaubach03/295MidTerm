@@ -3,7 +3,7 @@
 class Calendar {
     private $year;
     private $month;
-    private $events = [];
+    public $events = [];
 
     public function __construct($year = null, $month = null) {
         $this->year = $year ?: date('Y');
@@ -18,26 +18,32 @@ class Calendar {
         $daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         $daysInMonth = date('t', strtotime("$this->year-$this->month-01"));
         $firstDayOfWeek = date('w', strtotime("$this->year-$this->month-01"));
-    
+
         // Start rendering HTML
-        $html = '<table border="1">';
+        $html = '<div class="calendar-header">';
+        $html .= '<button onclick="navigateMonth(-1)">&#8592;</button>';
+        $html .= '<span>' . date('F Y', strtotime("$this->year-$this->month-01")) . '</span>';
+        $html .= '<button onclick="navigateMonth(1)">&#8594;</button>';
+        $html .= '</div>';
+
+        $html .= '<table border="1">';
         $html .= '<tr><th>' . implode('</th><th>', $daysOfWeek) . '</th></tr>';
         $html .= '<tr>';
-    
+
         // Empty cells before first day
         for ($i = 0; $i < $firstDayOfWeek; $i++) {
             $html .= '<td></td>';
         }
-    
+
         // Days of the month
         for ($day = 1; $day <= $daysInMonth; $day++) {
             if (($day + $firstDayOfWeek - 1) % 7 == 0 && $day != 1) {
                 $html .= '</tr><tr>';
             }
-    
+
             // Format date
             $date = sprintf('%04d-%02d-%02d', $this->year, $this->month, $day);
-    
+
             // Check for events
             if (isset($this->events[$date])) {
                 $eventHtml = '<ul>';
@@ -50,18 +56,15 @@ class Calendar {
                 $html .= "<td>$day</td>";
             }
         }
-    
+
         // Empty cells after last day
         while (($day + $firstDayOfWeek - 1) % 7 != 0) {
             $html .= '<td></td>';
-            $day++;
+            ++$day;
         }
-    
+
         // Close table
-        $html .= '</tr></table>';
-    
-        return $html;
+        return "$html</tr></table>";
     }
-    
 }
 ?>
