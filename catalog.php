@@ -112,7 +112,6 @@
         <p>&copy; 2025 Detroit Pistons. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Month Navigation -->
     <script>
         function navigateMonth(direction) {
             const urlParams = new URLSearchParams(window.location.search);
