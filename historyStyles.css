@@ -78,15 +78,16 @@ h2 {
 
 
 .founderImg {
-   float: right; 
-   margin: 0 0 15px 20px; 
-}
-.founderImg img {
-    max-width: 250px; 
-    height: auto;
-    border: 1px solid #ccc;
-    padding: 4px;
-}
+    float: left; 
+    margin: 0 20px 15px 0; 
+ }
+ 
+ .founderImg img {
+     max-width: 250px; 
+     height: auto;
+     border: 1px solid #ccc;
+     padding: 4px;
+ }
 .founderImg figcaption {
     text-align: center;
     font-style: italic;

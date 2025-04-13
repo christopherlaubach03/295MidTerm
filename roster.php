@@ -62,7 +62,7 @@
     <header>
         <nav id="topbar">
             <div class="logo">
-                <a href="index.php"><img src="images/logo.png" alt="Detroit Pistons Logo"></a>
+                <a href="index.html"><img src="images/logo.png" alt="Detroit Pistons Logo"></a>
             </div>
             <ul>
                 <li><a href="index.html">HOME</a></li>    

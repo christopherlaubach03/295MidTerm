@@ -88,8 +88,32 @@ footer {
 }
 
 .authors {
-    font-style: italic;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .author-card {
+    text-align: center;
+    
+  }
+  
+  .author-card img {
+    max-width: 200px; 
+    height: auto;     
+    border-radius: 5px;
+    object-fit: cover; 
+  }
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 12px;
 }
 
 .goals, .requirements {
