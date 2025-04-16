@@ -34,11 +34,10 @@
                 <button type="submit">Search</button>
             </form>
 
-            <!-- Search Result -->
             <?php
             require_once 'Calendar.php';
 
-            // Create a new calendar instance for April 2025
+            // Create a new calendar instance
             $year = isset($_GET['year']) ? (int)$_GET['year'] : date('Y');
             $month = isset($_GET['month']) ? (int)$_GET['month'] : date('m');
 
@@ -55,21 +54,21 @@
             $calendar->addEvent('2025-03-01', 'vs BKN (W 115-94)');
             $calendar->addEvent('2025-03-03', '@ UTA (W 134-106)');
             $calendar->addEvent('2025-03-05', '@ LAC (L 115-123)');
-            $calendar->addEvent('2025-03-08', '@ GSW (L 101–110)');
-            $calendar->addEvent('2025-03-09', '@ POR (L 98–105)');
-            $calendar->addEvent('2025-03-11', 'vs WAS (W 120–110)');
-            $calendar->addEvent('2025-03-13', 'vs WAS (L 102–115)');
-            $calendar->addEvent('2025-03-15', 'vs OKC (W 118–112)');
-            $calendar->addEvent('2025-03-17', '@ NOP (L 99–107)');
-            $calendar->addEvent('2025-03-19', '@ MIA (L 111–120)');
-            $calendar->addEvent('2025-03-21', '@ DAL (W 113–108)');
-            $calendar->addEvent('2025-03-23', 'vs NOP (W 125–122)');
-            $calendar->addEvent('2025-03-25', 'vs SAS (W 127–104)');
-            $calendar->addEvent('2025-03-28', 'vs CLE (W 120–117)');
-            $calendar->addEvent('2025-03-30', '@ MIN (L 109–114)');
+            $calendar->addEvent('2025-03-08', '@ GSW (L 101-110)');
+            $calendar->addEvent('2025-03-09', '@ POR (L 98-105)');
+            $calendar->addEvent('2025-03-11', 'vs WAS (W 120-110)');
+            $calendar->addEvent('2025-03-13', 'vs WAS (L 102-115)');
+            $calendar->addEvent('2025-03-15', 'vs OKC (W 118-112)');
+            $calendar->addEvent('2025-03-17', '@ NOP (L 99-107)');
+            $calendar->addEvent('2025-03-19', '@ MIA (L 111-120)');
+            $calendar->addEvent('2025-03-21', '@ DAL (W 113-108)');
+            $calendar->addEvent('2025-03-23', 'vs NOP (W 125-122)');
+            $calendar->addEvent('2025-03-25', 'vs SAS (W 127-104)');
+            $calendar->addEvent('2025-03-28', 'vs CLE (W 120-117)');
+            $calendar->addEvent('2025-03-30', '@ MIN (L 109-114)');
 
-            $calendar->addEvent('2025-04-02', '@ OKC (L 103–119)');
-            $calendar->addEvent('2025-04-04', '@ TOR (W 117–105)');
+            $calendar->addEvent('2025-04-02', '@ OKC (L 103-119)');
+            $calendar->addEvent('2025-04-04', '@ TOR (W 117-105)');
             $calendar->addEvent('2025-04-05', 'vs MEM (7:00 PM)');
             $calendar->addEvent('2025-04-07', 'vs SAC (7:00 PM)');
             $calendar->addEvent('2025-04-10', 'vs NYK (7:00 PM)');
