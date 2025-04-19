@@ -3,12 +3,6 @@ service(s) in your project, and in which files (and file sections) the relevant 
 You can also include comments about factors that influenced any major programming decisions you made (e.g. selecting between two approaches).
 Include comments as appropriate to describe the purpose or function of sections of the code in each file, to make it easier to follow the code.
 
-Error handling can be found in catalog.php in the search section. If your search date is not a valid date, it echo's '<div class="error-message">.
-
-The calendar is build with a PHP class in catalog.php and calendar.php.
-
-Bootstrap can be found on index.html (our home page). The carousel is entirely bootstrap implemented code tailored with Detroit Pistons photos. 
-
 Graham Eisenmann:
 
 Error handeling was implemented on my side by having the script check the connection 
@@ -29,4 +23,26 @@ much easier updates and managment of player data withought editing the HTML spec
 I also changed the stats display. Instead of having the cluncky box appearing below the row
 i made the player name disappear and fade into the stats while increasing the size of the plyers picture.
 This was implemented using CSS transitions, and JavaScript to toggle CSS classes based on user interaction. 
+
+
+Christopher Laubach:
+
+A form for user input was added to the top of catalog.php to allow users to search for Detroit Pistons game information by date. 
+This form uses an HTML <input type="date"> field, making it easy for users to select or enter a date, and includes a submit button to 
+search. When the form is submitted, the selected date is sent to the server via a GET request, where the PHP script checks if a game is 
+scheduled for that date and displays the relevant details or an error message if no game is found. This feature enhances 
+usability by letting users quickly find specific game information without scrolling through the entire calendar.
+
+Error handling is implemented in the catalog.php class by providing feedback when a user searches for game information by date. 
+When a date is submitted through the form, the PHP code checks if there is a scheduled game on that date within the calendar events. 
+If a game exists, it displays the relevant game details. However, if no game is scheduled for the entered date, the script echo's 
+'<div class="error-message"> with the  error-message, informing the user that there is no game on that date. The input date is "sanitized" 
+using htmlspecialchars() to prevent any security issues. Additionally, the date input field is marked as required in the HTML form, 
+ensuring that the user cannot submit the form without entering a valid date. 
+
+The calendar feature on the site is built using a custom PHP class, which is defined in calendar.php and used in catalog.php. 
+This class handles the creation, population, and rendering of the calendar, including adding and displaying events for specific dates.
+The implementation allows for navigation between months and highlights scheduled games. The overall structure and logic for the calendar 
+was developed by following a W3Schools tutorial.
+
 
